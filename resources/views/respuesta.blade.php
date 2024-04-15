@@ -9,7 +9,7 @@
 
 @section('content')
 @section('plugins.Datatables', true)
-{{-- {{dd($data[0])}} --}}
+{{dd($data)}}
 @foreach ($data as $value)
     {{-- <p>{{ $value->username }}</p>
              --}}

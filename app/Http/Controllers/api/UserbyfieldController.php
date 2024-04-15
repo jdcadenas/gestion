@@ -17,7 +17,9 @@ class UserbyfieldController extends Controller
      */
     public function index()
     {
-        $response=Http::dd()->get('http://localhost/moodle/webservice/rest/server.php?wstoken=66607fe2f5d099c28c9a4e30f718f0cc&moodlewsrestformat=json&wsfunction=core_user_get_users_by_field&field=id&values[0]=3')->json();
+        // $response=Http::dd()->get('http://localhost/moodle/webservice/rest/server.php?wstoken=66607fe2f5d099c28c9a4e30f718f0cc&moodlewsrestformat=json&wsfunction=core_user_get_users_by_field&field=id&values[0]=3')->json();
+        // return view('respuesta', ['data' => $response]);
+        $response=Http::get('https://plataforma-arrow.online/webservice/rest/server.php?wstoken=b5b21ab543dc353b80fd60e15b8d80fc&moodlewsrestformat=json&wsfunction=core_user_get_users')->json();
         return view('respuesta', ['data' => $response]);
     }
 
@@ -34,7 +36,7 @@ class UserbyfieldController extends Controller
      */
     public function show(string $id)
     {
-        $response=Http::get('https://plataforma-arrow.online/webservice/rest/server.php?wstoken=b5b21ab543dc353b80fd60e15b8d80fc&moodlewsrestformat=json&wsfunction=core_user_get_users_by_field&field=id&values[0]='.$id)->json();
+        $response=Http::get('https://plataforma-arrow.online/webservice/rest/server.php?wstoken=b5b21ab543dc353b80fd60e15b8d80fc&moodlewsrestformat=json&wsfunction=core_user_get_users')->json();
         return view('respuesta', ['data' => $response]);
 
         
