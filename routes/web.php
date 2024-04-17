@@ -9,5 +9,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/respuestarespuesta', [App\Http\Controllers\api\UserbyfieldController::class, 'show'])->name('respuesta');
-Route::get('/usuarios/ingresar', [App\Http\Controllers\api\UserallController::class, 'index'])->name('usuarios');;
+Route::get('/respuesta', [App\Http\Controllers\api\UserbyfieldController::class])->name('respuesta');
