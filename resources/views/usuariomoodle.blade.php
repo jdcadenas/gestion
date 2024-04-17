@@ -4,16 +4,11 @@
 @section('title', 'Gestión de Cursos')
 
 @section('content_header')
-    <h1>Inicio</h1>
+    <h1>Usuario</h1>
 @stop
 
 @section('content')
 @section('plugins.Datatables', true)
-{{dd($data)}}
-@foreach ($data as $value)
-    {{-- <p>{{ $value->username }}</p>
-             --}}
-@endforeach
 
 <table id="example" class="table table-striped table-bordered" style="width:100%">
 
