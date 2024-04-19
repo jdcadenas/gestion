@@ -440,6 +440,12 @@ return [
                     //'location' => '//cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css',
                     'location' => '/vendor/datatables/css/dataTables.bootstrap4.min.css',
                 ],
+                 [
+                    'type' => 'js',
+                    'asset' => true,
+                    //'location' => '//cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css',
+                    'location' => '/vendor/datatables/js/dataTables.treeGrid.js',
+                ],
             ],
         ],
         

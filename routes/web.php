@@ -9,4 +9,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/respuesta', [App\Http\Controllers\api\UserbyfieldController::class, 'show'])->name('respuesta');
+Route::get('/categorias', [App\Http\Controllers\CategoriesController::class, 'index'])->name('categoria');
+
+// Route::get('/respuesta', [App\Http\Controllers\api\UserbyfieldController::class, 'show'])->name('respuesta');

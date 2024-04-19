@@ -6,14 +6,14 @@
 @section('content_header')
     <h1>Categorías</h1>
 @stop
-
-@section('content')
 @section('plugins.Datatables', true)
 
 <table id="example" class="table table-striped table-bordered" style="width:100%">
 
 </table>
 @stop
+@section('content')
+
 
 @section('css')
 {{-- Add here extra stylesheets --}}
@@ -44,6 +44,11 @@
                     {
                         title: "description",
                         data: 'description',
+
+                    },
+                    {
+                        title: "parent",
+                        data: 'parent',
 
                     },
                     {
