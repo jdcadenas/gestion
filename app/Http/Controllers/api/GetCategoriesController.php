@@ -23,7 +23,7 @@ class GetCategoriesController extends Controller
 
         ])->json();
 
-        return view('categories', ['data' => $response]);
+        return view('categories', ['data' => $response]);//compact
     }
 
     /**
