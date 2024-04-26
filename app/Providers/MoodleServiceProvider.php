@@ -21,10 +21,10 @@ class MoodleServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Route::post('/moodle/login', function (Request $request) {
-            $moodleService = app(MoodleServiceInterface::class);
-            $response = $moodleService->loginTeacher($request->username, $request->password);
-            return response()->json($response);
-        });
+        // Route::post('/moodle/login', function (Request $request) {
+        //     $moodleService = app(MoodleServiceInterface::class);
+        //     $response = $moodleService->loginTeacher($request->username, $request->password);
+        //     return response()->json($response);
+        // });
     }
 }
