@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('auth.login');
 });
-Route::get('/loginmoodle', [App\Http\Controllers\LoginMoodleController::class, 'authenticate'])->name('loginmoodle');
+Route::post('/loginmoodle', [App\Http\Controllers\LoginMoodleController::class, 'authenticate'])->name('loginmoodle');
 
 Auth::routes();
 
@@ -16,3 +16,7 @@ Route::get('/usertoken', [App\Http\Controllers\UserTokenController::class, 'inde
 
 //Route::resource('photos', PhotoController::class)->withTrashed();
 // Route::get('/respuesta', [App\Http\Controllers\api\UserbyfieldController::class, 'show'])->name('respuesta');
+
+// Route::get('/home', function() {
+//     return view('home');
+// })->name('home')->middleware('auth');

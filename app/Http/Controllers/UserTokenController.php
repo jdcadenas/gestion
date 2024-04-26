@@ -18,7 +18,7 @@ class UserTokenController extends Controller
             'username'=>'francomedina21',
             'password'=>'Miguelmedina21-',
         ])->json();
-        //dd($user);
+        dd($user);
         return view('usuarios.inicio',compact('user'));
 
         //

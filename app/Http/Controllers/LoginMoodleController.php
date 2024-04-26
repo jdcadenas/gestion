@@ -14,7 +14,7 @@ class LoginMoodleController extends Controller
      */
     public function authenticate(Request $request): RedirectResponse
     {
-        dd($request);
+       dd($request);
         $credentials = $request->validate([
             'email' => ['required'],
             'password' => ['required'],
