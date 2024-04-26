@@ -8,11 +8,11 @@
 @stop
 
 @section('content')
-@section('plugins.Datatables', true)
+{{-- @section('plugins.Datatables', true)
             @foreach ($data as $item)
             <p>{{ $item['name'] }}</p>
             @endforeach
-@stop
+@stop --}}
 
 @section('css')
     {{-- Add here extra stylesheets --}}
